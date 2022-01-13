@@ -1,4 +1,3 @@
-
 import itertools, random
 
 Muldrotha_deck = [('Land', 'Swamp'), ('Land', 'Swamp'), ('Land', 'Swamp'), ('Land', 'Swamp'), ('Land', 'Swamp'), ('Land', 'Swamp'),
