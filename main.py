@@ -1,5 +1,7 @@
 
-deck = [('Swamp', 'Land'), ('Swamp', 'Land'), ('Swamp', 'Land'), ('Swamp', 'Land'), ('Swamp', 'Land'), ('Swamp', 'Land'),
+import itertools, random
+
+Muldrotha_deck = [('Swamp', 'Land'), ('Swamp', 'Land'), ('Swamp', 'Land'), ('Swamp', 'Land'), ('Swamp', 'Land'), ('Swamp', 'Land'),
         ('Forest', 'Land'), ('Forest', 'Land'), ('Forest', 'Land'), ('Forest', 'Land'), ('Forest', 'Land'),
         ('Island', 'Land'), ('Island', 'Land'), ('Island', 'Land'), ('Island', 'Land'), ('Island', 'Land'), ('Island', 'Land'), ('Island', 'Land'),
         ('Golgari Rot Farm', 'Land'), ('Tainted Wood', 'Land'), ('Tainted Isle', 'Land'), ('Cabal Pit', 'Land'), ('Bojuka Bog', 'Land'), 
@@ -15,4 +17,8 @@ deck = [('Swamp', 'Land'), ('Swamp', 'Land'), ('Swamp', 'Land'), ('Swamp', 'Land
         ('Deathrite Shaman', 'Creature'), ('World Shaper', 'Creature'), ('Dreamborn Muse', 'Creature'), ('Ilysian Caryatid', 'Creature'), ('Jace, Wielder of Mysteries', 'Planeswalker'),
         ('Kiora, Master of the Depths', 'Planeswalker'), ('Kayas Ghostform', 'Enchantment'), ('Seal of Removal', 'Enchantment'), ('Chronic Flooding', 'Enchantment'), ('Sultai Ascendancy', 'Enchantment'), ('Khalni Heart Expedition', 'Enchantment'), 
         ('Animate Dead', 'Enchantment'), ('Pernicious Deed', 'Enchantment'), ('Rhystic Study', 'Enchantment'), ('Second Chance', 'Enchantment'), ('Defense of the Heart', 'Enchantment'),
-        ('Phyrexian Scriptures', 'Enchantment'), ('Zur's Weirding', 'Enchantment')]
+        ('Phyrexian Scriptures', 'Enchantment'), ('Zurs Weirding', 'Enchantment')]
+
+random.shuffle(Muldrotha_deck)
+
+print(Muldrotha_deck)
