@@ -168,4 +168,533 @@ for hands in range(N):
         elif initial_mana == 7:
                 no_muldrotha_seven_land_hand+=1
         
+# Muldrotha playable, turn 3
+prob_muldrotha_in_play = muldrotha_in_play/N
+prob_no_muldrotha = no_muldrotha/N
 
+# Since Muldrotha was Playable, initial hand was
+
+prob_muldrotha_zero_land_hand = muldrotha_zero_land_hand/N
+prob_muldrotha_one_land_hand = muldrotha_one_land_hand/N
+prob_muldrotha_two_land_hand = muldrotha_two_land_hand/N
+prob_muldrotha_three_land_hand = muldrotha_three_land_hand/N
+prob_muldrotha_four_land_hand = muldrotha_four_land_hand/N
+prob_muldrotha_five_land_hand = muldrotha_five_land_hand/N              
+prob_muldrotha_six_land_hand = muldrotha_six_land_hand/N       
+prob_muldrotha_seven_land_hand = muldrotha_seven_land_hand/N     
+
+# Since Muldrotha was NOT  Playable, initial hand was
+
+prob_no_muldrotha_zero_land_hand = no_muldrotha_zero_land_hand/N
+prob_no_muldrotha_one_land_hand = no_muldrotha_one_land_hand/N
+prob_no_muldrotha_two_land_hand = no_muldrotha_two_land_hand/N
+prob_no_muldrotha_three_land_hand = no_muldrotha_three_land_hand/N
+prob_no_muldrotha_four_land_hand = no_muldrotha_four_land_hand/N
+prob_no_muldrotha_five_land_hand = no_muldrotha_five_land_hand/N              
+prob_no_muldrotha_six_land_hand = no_muldrotha_six_land_hand/N       
+prob_no_muldrotha_seven_land_hand = no_muldrotha_seven_land_hand/N         
+
+
+#-------------------------------- 3 --------------------------------
+# SIMULATION 3, BUT WITH TURN 4 
+
+no_muldrotha_zero_land_hand = 0
+no_muldrotha_one_land_hand = 0
+no_muldrotha_two_land_hand = 0
+no_muldrotha_three_land_hand = 0
+no_muldrotha_four_land_hand = 0
+no_muldrotha_five_land_hand = 0
+no_muldrotha_six_land_hand = 0
+no_muldrotha_seven_land_hand = 0
+
+muldrotha_zero_land_hand = 0
+muldrotha_one_land_hand = 0
+muldrotha_two_land_hand = 0
+muldrotha_three_land_hand = 0
+muldrotha_four_land_hand = 0
+muldrotha_five_land_hand = 0
+muldrotha_six_land_hand = 0
+muldrotha_seven_land_hand = 0
+
+for hands in range(N):
+    # shuffle the cards
+    random.shuffle(Muldrotha_deck)
+    LPM = [d[0] for d in deck[0:10]].count('LMP')
+    PM = [d[0] for d in deck[0:10]].count('LMP')
+    initial_hand_LPM = [d[0] for d in deck[0:11]].count('LMP')
+    initial_hand_PM = [d[0] for d in deck[0:11]].count('PM')
+        
+    mana = LMP + PM
+    initial_mana = initial_hand_PM + initial_hand_LPM
+
+    if mana >= 6 :
+        
+        muldrotha_in_play += 1
+        
+        if initial_mana == 0:
+                muldrotha_zero_land_hand+=1
+        elif initial_mana == 1:
+                muldrotha_one_land_hand+=1
+        elif initial_mana == 2:
+                muldrotha_two_land_hand+=1
+        elif initial_mana == 3:
+                muldrotha_three_land_hand+=1
+        elif initial_mana == 4:
+                muldrotha_four_land_hand+=1
+        elif initial_mana == 5:
+                muldrotha_five_land_hand+=1      
+        elif initial_mana == 6:
+                muldrotha_six_land_hand+=1        
+        elif initial_mana == 7:
+                muldrotha_seven_land_hand+=1
+                
+    else:
+        
+        no_muldrotha += 1
+        
+        if initial_mana == 0:
+                no_muldrotha_zero_land_hand+=1
+        elif initial_mana == 1:
+                no_muldrotha_one_land_hand+=1
+        elif initial_mana == 2:
+                no_muldrotha_two_land_hand+=1
+        elif initial_mana == 3:
+                no_muldrotha_three_land_hand+=1
+        elif initial_mana == 4:
+                no_muldrotha_four_land_hand+=1
+        elif initial_mana == 5:
+                no_muldrotha_five_land_hand+=1      
+        elif initial_mana == 6:
+                no_muldrotha_six_land_hand+=1        
+        elif initial_mana == 7:
+                no_muldrotha_seven_land_hand+=1
+        
+# Muldrotha playable, turn 3
+prob_muldrotha_in_play = muldrotha_in_play/N
+prob_no_muldrotha = no_muldrotha/N
+
+# Since Muldrotha was Playable, initial hand was
+
+prob_muldrotha_zero_land_hand = muldrotha_zero_land_hand/N
+prob_muldrotha_one_land_hand = muldrotha_one_land_hand/N
+prob_muldrotha_two_land_hand = muldrotha_two_land_hand/N
+prob_muldrotha_three_land_hand = muldrotha_three_land_hand/N
+prob_muldrotha_four_land_hand = muldrotha_four_land_hand/N
+prob_muldrotha_five_land_hand = muldrotha_five_land_hand/N              
+prob_muldrotha_six_land_hand = muldrotha_six_land_hand/N       
+prob_muldrotha_seven_land_hand = muldrotha_seven_land_hand/N     
+
+# Since Muldrotha was NOT  Playable, initial hand was
+
+prob_no_muldrotha_zero_land_hand = no_muldrotha_zero_land_hand/N
+prob_no_muldrotha_one_land_hand = no_muldrotha_one_land_hand/N
+prob_no_muldrotha_two_land_hand = no_muldrotha_two_land_hand/N
+prob_no_muldrotha_three_land_hand = no_muldrotha_three_land_hand/N
+prob_no_muldrotha_four_land_hand = no_muldrotha_four_land_hand/N
+prob_no_muldrotha_five_land_hand = no_muldrotha_five_land_hand/N              
+prob_no_muldrotha_six_land_hand = no_muldrotha_six_land_hand/N       
+prob_no_muldrotha_seven_land_hand = no_muldrotha_seven_land_hand/N         
+
+
+#-------------------------------- 3 --------------------------------
+# SIMULATION 3, BUT WITH TURN 5
+
+no_muldrotha_zero_land_hand = 0
+no_muldrotha_one_land_hand = 0
+no_muldrotha_two_land_hand = 0
+no_muldrotha_three_land_hand = 0
+no_muldrotha_four_land_hand = 0
+no_muldrotha_five_land_hand = 0
+no_muldrotha_six_land_hand = 0
+no_muldrotha_seven_land_hand = 0
+
+muldrotha_zero_land_hand = 0
+muldrotha_one_land_hand = 0
+muldrotha_two_land_hand = 0
+muldrotha_three_land_hand = 0
+muldrotha_four_land_hand = 0
+muldrotha_five_land_hand = 0
+muldrotha_six_land_hand = 0
+muldrotha_seven_land_hand = 0
+
+for hands in range(N):
+    # shuffle the cards
+    random.shuffle(Muldrotha_deck)
+    LPM = [d[0] for d in deck[0:10]].count('LMP')
+    PM = [d[0] for d in deck[0:10]].count('LMP')
+    initial_hand_LPM = [d[0] for d in deck[0:12]].count('LMP')
+    initial_hand_PM = [d[0] for d in deck[0:12]].count('PM')
+        
+    mana = LMP + PM
+    initial_mana = initial_hand_PM + initial_hand_LPM
+
+    if mana >= 6 :
+        
+        muldrotha_in_play += 1
+        
+        if initial_mana == 0:
+                muldrotha_zero_land_hand+=1
+        elif initial_mana == 1:
+                muldrotha_one_land_hand+=1
+        elif initial_mana == 2:
+                muldrotha_two_land_hand+=1
+        elif initial_mana == 3:
+                muldrotha_three_land_hand+=1
+        elif initial_mana == 4:
+                muldrotha_four_land_hand+=1
+        elif initial_mana == 5:
+                muldrotha_five_land_hand+=1      
+        elif initial_mana == 6:
+                muldrotha_six_land_hand+=1        
+        elif initial_mana == 7:
+                muldrotha_seven_land_hand+=1
+                
+    else:
+        
+        no_muldrotha += 1
+        
+        if initial_mana == 0:
+                no_muldrotha_zero_land_hand+=1
+        elif initial_mana == 1:
+                no_muldrotha_one_land_hand+=1
+        elif initial_mana == 2:
+                no_muldrotha_two_land_hand+=1
+        elif initial_mana == 3:
+                no_muldrotha_three_land_hand+=1
+        elif initial_mana == 4:
+                no_muldrotha_four_land_hand+=1
+        elif initial_mana == 5:
+                no_muldrotha_five_land_hand+=1      
+        elif initial_mana == 6:
+                no_muldrotha_six_land_hand+=1        
+        elif initial_mana == 7:
+                no_muldrotha_seven_land_hand+=1
+        
+# Muldrotha playable, turn 3
+prob_muldrotha_in_play = muldrotha_in_play/N
+prob_no_muldrotha = no_muldrotha/N
+
+# Since Muldrotha was Playable, initial hand was
+
+prob_muldrotha_zero_land_hand = muldrotha_zero_land_hand/N
+prob_muldrotha_one_land_hand = muldrotha_one_land_hand/N
+prob_muldrotha_two_land_hand = muldrotha_two_land_hand/N
+prob_muldrotha_three_land_hand = muldrotha_three_land_hand/N
+prob_muldrotha_four_land_hand = muldrotha_four_land_hand/N
+prob_muldrotha_five_land_hand = muldrotha_five_land_hand/N              
+prob_muldrotha_six_land_hand = muldrotha_six_land_hand/N       
+prob_muldrotha_seven_land_hand = muldrotha_seven_land_hand/N     
+
+# Since Muldrotha was NOT  Playable, initial hand was
+
+prob_no_muldrotha_zero_land_hand = no_muldrotha_zero_land_hand/N
+prob_no_muldrotha_one_land_hand = no_muldrotha_one_land_hand/N
+prob_no_muldrotha_two_land_hand = no_muldrotha_two_land_hand/N
+prob_no_muldrotha_three_land_hand = no_muldrotha_three_land_hand/N
+prob_no_muldrotha_four_land_hand = no_muldrotha_four_land_hand/N
+prob_no_muldrotha_five_land_hand = no_muldrotha_five_land_hand/N              
+prob_no_muldrotha_six_land_hand = no_muldrotha_six_land_hand/N       
+prob_no_muldrotha_seven_land_hand = no_muldrotha_seven_land_hand/N       
+        
+        
+        
+#-------------------------------- 3 --------------------------------
+# SIMULATION 3, BUT WITH TURN 6 
+
+no_muldrotha_zero_land_hand = 0
+no_muldrotha_one_land_hand = 0
+no_muldrotha_two_land_hand = 0
+no_muldrotha_three_land_hand = 0
+no_muldrotha_four_land_hand = 0
+no_muldrotha_five_land_hand = 0
+no_muldrotha_six_land_hand = 0
+no_muldrotha_seven_land_hand = 0
+
+muldrotha_zero_land_hand = 0
+muldrotha_one_land_hand = 0
+muldrotha_two_land_hand = 0
+muldrotha_three_land_hand = 0
+muldrotha_four_land_hand = 0
+muldrotha_five_land_hand = 0
+muldrotha_six_land_hand = 0
+muldrotha_seven_land_hand = 0
+
+for hands in range(N):
+    # shuffle the cards
+    random.shuffle(Muldrotha_deck)
+    LPM = [d[0] for d in deck[0:10]].count('LMP')
+    PM = [d[0] for d in deck[0:10]].count('LMP')
+    initial_hand_LPM = [d[0] for d in deck[0:13]].count('LMP')
+    initial_hand_PM = [d[0] for d in deck[0:13]].count('PM')
+        
+    mana = LMP + PM
+    initial_mana = initial_hand_PM + initial_hand_LPM
+
+    if mana >= 6 :
+        
+        muldrotha_in_play += 1
+        
+        if initial_mana == 0:
+                muldrotha_zero_land_hand+=1
+        elif initial_mana == 1:
+                muldrotha_one_land_hand+=1
+        elif initial_mana == 2:
+                muldrotha_two_land_hand+=1
+        elif initial_mana == 3:
+                muldrotha_three_land_hand+=1
+        elif initial_mana == 4:
+                muldrotha_four_land_hand+=1
+        elif initial_mana == 5:
+                muldrotha_five_land_hand+=1      
+        elif initial_mana == 6:
+                muldrotha_six_land_hand+=1        
+        elif initial_mana == 7:
+                muldrotha_seven_land_hand+=1
+                
+    else:
+        
+        no_muldrotha += 1
+        
+        if initial_mana == 0:
+                no_muldrotha_zero_land_hand+=1
+        elif initial_mana == 1:
+                no_muldrotha_one_land_hand+=1
+        elif initial_mana == 2:
+                no_muldrotha_two_land_hand+=1
+        elif initial_mana == 3:
+                no_muldrotha_three_land_hand+=1
+        elif initial_mana == 4:
+                no_muldrotha_four_land_hand+=1
+        elif initial_mana == 5:
+                no_muldrotha_five_land_hand+=1      
+        elif initial_mana == 6:
+                no_muldrotha_six_land_hand+=1        
+        elif initial_mana == 7:
+                no_muldrotha_seven_land_hand+=1
+        
+# Muldrotha playable, turn 3
+prob_muldrotha_in_play = muldrotha_in_play/N
+prob_no_muldrotha = no_muldrotha/N
+
+# Since Muldrotha was Playable, initial hand was
+
+prob_muldrotha_zero_land_hand = muldrotha_zero_land_hand/N
+prob_muldrotha_one_land_hand = muldrotha_one_land_hand/N
+prob_muldrotha_two_land_hand = muldrotha_two_land_hand/N
+prob_muldrotha_three_land_hand = muldrotha_three_land_hand/N
+prob_muldrotha_four_land_hand = muldrotha_four_land_hand/N
+prob_muldrotha_five_land_hand = muldrotha_five_land_hand/N              
+prob_muldrotha_six_land_hand = muldrotha_six_land_hand/N       
+prob_muldrotha_seven_land_hand = muldrotha_seven_land_hand/N     
+
+# Since Muldrotha was NOT  Playable, initial hand was
+
+prob_no_muldrotha_zero_land_hand = no_muldrotha_zero_land_hand/N
+prob_no_muldrotha_one_land_hand = no_muldrotha_one_land_hand/N
+prob_no_muldrotha_two_land_hand = no_muldrotha_two_land_hand/N
+prob_no_muldrotha_three_land_hand = no_muldrotha_three_land_hand/N
+prob_no_muldrotha_four_land_hand = no_muldrotha_four_land_hand/N
+prob_no_muldrotha_five_land_hand = no_muldrotha_five_land_hand/N              
+prob_no_muldrotha_six_land_hand = no_muldrotha_six_land_hand/N       
+prob_no_muldrotha_seven_land_hand = no_muldrotha_seven_land_hand/N       
+
+        
+#-------------------------------- 3 --------------------------------
+# SIMULATION 3, BUT WITH TURN 7 
+
+no_muldrotha_zero_land_hand = 0
+no_muldrotha_one_land_hand = 0
+no_muldrotha_two_land_hand = 0
+no_muldrotha_three_land_hand = 0
+no_muldrotha_four_land_hand = 0
+no_muldrotha_five_land_hand = 0
+no_muldrotha_six_land_hand = 0
+no_muldrotha_seven_land_hand = 0
+
+muldrotha_zero_land_hand = 0
+muldrotha_one_land_hand = 0
+muldrotha_two_land_hand = 0
+muldrotha_three_land_hand = 0
+muldrotha_four_land_hand = 0
+muldrotha_five_land_hand = 0
+muldrotha_six_land_hand = 0
+muldrotha_seven_land_hand = 0
+
+for hands in range(N):
+    # shuffle the cards
+    random.shuffle(Muldrotha_deck)
+    LPM = [d[0] for d in deck[0:10]].count('LMP')
+    PM = [d[0] for d in deck[0:10]].count('LMP')
+    initial_hand_LPM = [d[0] for d in deck[0:14]].count('LMP')
+    initial_hand_PM = [d[0] for d in deck[0:14]].count('PM')
+        
+    mana = LMP + PM
+    initial_mana = initial_hand_PM + initial_hand_LPM
+
+    if mana >= 6 :
+        
+        muldrotha_in_play += 1
+        
+        if initial_mana == 0:
+                muldrotha_zero_land_hand+=1
+        elif initial_mana == 1:
+                muldrotha_one_land_hand+=1
+        elif initial_mana == 2:
+                muldrotha_two_land_hand+=1
+        elif initial_mana == 3:
+                muldrotha_three_land_hand+=1
+        elif initial_mana == 4:
+                muldrotha_four_land_hand+=1
+        elif initial_mana == 5:
+                muldrotha_five_land_hand+=1      
+        elif initial_mana == 6:
+                muldrotha_six_land_hand+=1        
+        elif initial_mana == 7:
+                muldrotha_seven_land_hand+=1
+                
+    else:
+        
+        no_muldrotha += 1
+        
+        if initial_mana == 0:
+                no_muldrotha_zero_land_hand+=1
+        elif initial_mana == 1:
+                no_muldrotha_one_land_hand+=1
+        elif initial_mana == 2:
+                no_muldrotha_two_land_hand+=1
+        elif initial_mana == 3:
+                no_muldrotha_three_land_hand+=1
+        elif initial_mana == 4:
+                no_muldrotha_four_land_hand+=1
+        elif initial_mana == 5:
+                no_muldrotha_five_land_hand+=1      
+        elif initial_mana == 6:
+                no_muldrotha_six_land_hand+=1        
+        elif initial_mana == 7:
+                no_muldrotha_seven_land_hand+=1
+        
+# Muldrotha playable, turn 3
+prob_muldrotha_in_play = muldrotha_in_play/N
+prob_no_muldrotha = no_muldrotha/N
+
+# Since Muldrotha was Playable, initial hand was
+
+prob_muldrotha_zero_land_hand = muldrotha_zero_land_hand/N
+prob_muldrotha_one_land_hand = muldrotha_one_land_hand/N
+prob_muldrotha_two_land_hand = muldrotha_two_land_hand/N
+prob_muldrotha_three_land_hand = muldrotha_three_land_hand/N
+prob_muldrotha_four_land_hand = muldrotha_four_land_hand/N
+prob_muldrotha_five_land_hand = muldrotha_five_land_hand/N              
+prob_muldrotha_six_land_hand = muldrotha_six_land_hand/N       
+prob_muldrotha_seven_land_hand = muldrotha_seven_land_hand/N     
+
+# Since Muldrotha was NOT  Playable, initial hand was
+
+prob_no_muldrotha_zero_land_hand = no_muldrotha_zero_land_hand/N
+prob_no_muldrotha_one_land_hand = no_muldrotha_one_land_hand/N
+prob_no_muldrotha_two_land_hand = no_muldrotha_two_land_hand/N
+prob_no_muldrotha_three_land_hand = no_muldrotha_three_land_hand/N
+prob_no_muldrotha_four_land_hand = no_muldrotha_four_land_hand/N
+prob_no_muldrotha_five_land_hand = no_muldrotha_five_land_hand/N              
+prob_no_muldrotha_six_land_hand = no_muldrotha_six_land_hand/N       
+prob_no_muldrotha_seven_land_hand = no_muldrotha_seven_land_hand/N       
+
+#-------------------------------- 3 --------------------------------
+# SIMULATION 3, BUT WITH TURN 8 
+
+no_muldrotha_zero_land_hand = 0
+no_muldrotha_one_land_hand = 0
+no_muldrotha_two_land_hand = 0
+no_muldrotha_three_land_hand = 0
+no_muldrotha_four_land_hand = 0
+no_muldrotha_five_land_hand = 0
+no_muldrotha_six_land_hand = 0
+no_muldrotha_seven_land_hand = 0
+
+muldrotha_zero_land_hand = 0
+muldrotha_one_land_hand = 0
+muldrotha_two_land_hand = 0
+muldrotha_three_land_hand = 0
+muldrotha_four_land_hand = 0
+muldrotha_five_land_hand = 0
+muldrotha_six_land_hand = 0
+muldrotha_seven_land_hand = 0
+
+for hands in range(N):
+    # shuffle the cards
+    random.shuffle(Muldrotha_deck)
+    LPM = [d[0] for d in deck[0:10]].count('LMP')
+    PM = [d[0] for d in deck[0:10]].count('LMP')
+    initial_hand_LPM = [d[0] for d in deck[0:15]].count('LMP')
+    initial_hand_PM = [d[0] for d in deck[0:15]].count('PM')
+        
+    mana = LMP + PM
+    initial_mana = initial_hand_PM + initial_hand_LPM
+
+    if mana >= 6 :
+        
+        muldrotha_in_play += 1
+        
+        if initial_mana == 0:
+                muldrotha_zero_land_hand+=1
+        elif initial_mana == 1:
+                muldrotha_one_land_hand+=1
+        elif initial_mana == 2:
+                muldrotha_two_land_hand+=1
+        elif initial_mana == 3:
+                muldrotha_three_land_hand+=1
+        elif initial_mana == 4:
+                muldrotha_four_land_hand+=1
+        elif initial_mana == 5:
+                muldrotha_five_land_hand+=1      
+        elif initial_mana == 6:
+                muldrotha_six_land_hand+=1        
+        elif initial_mana == 7:
+                muldrotha_seven_land_hand+=1
+                
+    else:
+        
+        no_muldrotha += 1
+        
+        if initial_mana == 0:
+                no_muldrotha_zero_land_hand+=1
+        elif initial_mana == 1:
+                no_muldrotha_one_land_hand+=1
+        elif initial_mana == 2:
+                no_muldrotha_two_land_hand+=1
+        elif initial_mana == 3:
+                no_muldrotha_three_land_hand+=1
+        elif initial_mana == 4:
+                no_muldrotha_four_land_hand+=1
+        elif initial_mana == 5:
+                no_muldrotha_five_land_hand+=1      
+        elif initial_mana == 6:
+                no_muldrotha_six_land_hand+=1        
+        elif initial_mana == 7:
+                no_muldrotha_seven_land_hand+=1
+        
+# Muldrotha playable, turn 3
+prob_muldrotha_in_play = muldrotha_in_play/N
+prob_no_muldrotha = no_muldrotha/N
+
+# Since Muldrotha was Playable, initial hand was
+
+prob_muldrotha_zero_land_hand = muldrotha_zero_land_hand/N
+prob_muldrotha_one_land_hand = muldrotha_one_land_hand/N
+prob_muldrotha_two_land_hand = muldrotha_two_land_hand/N
+prob_muldrotha_three_land_hand = muldrotha_three_land_hand/N
+prob_muldrotha_four_land_hand = muldrotha_four_land_hand/N
+prob_muldrotha_five_land_hand = muldrotha_five_land_hand/N              
+prob_muldrotha_six_land_hand = muldrotha_six_land_hand/N       
+prob_muldrotha_seven_land_hand = muldrotha_seven_land_hand/N     
+
+# Since Muldrotha was NOT  Playable, initial hand was
+
+prob_no_muldrotha_zero_land_hand = no_muldrotha_zero_land_hand/N
+prob_no_muldrotha_one_land_hand = no_muldrotha_one_land_hand/N
+prob_no_muldrotha_two_land_hand = no_muldrotha_two_land_hand/N
+prob_no_muldrotha_three_land_hand = no_muldrotha_three_land_hand/N
+prob_no_muldrotha_four_land_hand = no_muldrotha_four_land_hand/N
+prob_no_muldrotha_five_land_hand = no_muldrotha_five_land_hand/N              
+prob_no_muldrotha_six_land_hand = no_muldrotha_six_land_hand/N       
+prob_no_muldrotha_seven_land_hand = no_muldrotha_seven_land_hand/N       
