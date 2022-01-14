@@ -97,3 +97,75 @@ Muldrotha_deck = [('LPM', 'Swamp'), ('LPM', 'Swamp'), ('LPM', 'Swamp'), ('LPM', 
         ('CM', 'Animate Dead'), ('CM', 'Pernicious Deed'), ('CM', 'Rhystic Study'), ('CM', 'Second Chance'), ('PM', 'Defense of the Heart'),
         ('CM', 'Phyrexian Scriptures'), ('CM', 'Zurs Weirding')]
 
+no_muldrotha_zero_land_hand = 0
+no_muldrotha_one_land_hand = 0
+no_muldrotha_two_land_hand = 0
+no_muldrotha_three_land_hand = 0
+no_muldrotha_four_land_hand = 0
+no_muldrotha_five_land_hand = 0
+no_muldrotha_six_land_hand = 0
+no_muldrotha_seven_land_hand = 0
+
+muldrotha_zero_land_hand = 0
+muldrotha_one_land_hand = 0
+muldrotha_two_land_hand = 0
+muldrotha_three_land_hand = 0
+muldrotha_four_land_hand = 0
+muldrotha_five_land_hand = 0
+muldrotha_six_land_hand = 0
+muldrotha_seven_land_hand = 0
+
+for hands in range(N):
+    # shuffle the cards
+    random.shuffle(Muldrotha_deck)
+    LPM = [d[0] for d in deck[0:10]].count('LMP')
+    PM = [d[0] for d in deck[0:10]].count('LMP')
+    initial_hand_LPM = [d[0] for d in deck[0:10]].count('LMP')
+    initial_hand_PM = [d[0] for d in deck[0:10]].count('PM')
+        
+    mana = LMP + PM
+    initial_mana = initial_hand_PM + initial_hand_LPM
+
+    if mana >= 6 :
+        
+        muldrotha_in_play += 1
+        
+        if initial_mana == 0:
+                muldrotha_zero_land_hand+=1
+        elif initial_mana == 1:
+                muldrotha_one_land_hand+=1
+        elif initial_mana == 2:
+                muldrotha_two_land_hand+=1
+        elif initial_mana == 3:
+                muldrotha_three_land_hand+=1
+        elif initial_mana == 4:
+                muldrotha_four_land_hand+=1
+        elif initial_mana == 5:
+                muldrotha_five_land_hand+=1      
+        elif initial_mana == 6:
+                muldrotha_six_land_hand+=1        
+        elif initial_mana == 7:
+                muldrotha_seven_land_hand+=1
+                
+    else:
+        
+        no_muldrotha += 1
+        
+        if initial_mana == 0:
+                no_muldrotha_zero_land_hand+=1
+        elif initial_mana == 1:
+                no_muldrotha_one_land_hand+=1
+        elif initial_mana == 2:
+                no_muldrotha_two_land_hand+=1
+        elif initial_mana == 3:
+                no_muldrotha_three_land_hand+=1
+        elif initial_mana == 4:
+                no_muldrotha_four_land_hand+=1
+        elif initial_mana == 5:
+                no_muldrotha_five_land_hand+=1      
+        elif initial_mana == 6:
+                no_muldrotha_six_land_hand+=1        
+        elif initial_mana == 7:
+                no_muldrotha_seven_land_hand+=1
+        
+
